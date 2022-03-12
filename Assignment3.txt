@@ -1,0 +1,352 @@
+Q6::
+import 'dart:io';
+
+void main() {
+  var list7 = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70];
+  var list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  var data = Map.fromIterables(list1, list7);
+  print(data);
+}
+Q7:
+import 'dart:io';
+
+void main() {
+  var JS = "arham";
+  var JS1 = "umair";
+  print("Enter your password");
+  var pass = stdin.readLineSync();
+  
+  {
+    if (pass == JS) {
+      print("valid password");
+    } else if (pass == JS1) {
+      print("Valid password");
+    } else {
+      print("enter your password");
+    }
+  }
+}
+question 10:
+
+{var name1 = "hyder";
+  var name2 = "abad";
+
+  var replace = name1.replaceFirst(name1, "islam");
+  var finalvar = replace + name2;
+  print(finalvar);
+}
+question 12:
+
+  print("enter number");
+  var number = stdin.readLineSync();
+   int JS = 10;
+
+   if (number = JS) {
+     print("first fifteen days of the month");
+   } else if (number != JS )
+   {
+     print("last fifteen days of the month");
+   }
+// Question 1: What are the various type of operators in dart ?
+
+  // Ansawer: There are three types of operators in dart
+  // 1) Arthmatic operator
+  // 2) Equality and relational operator
+  // 3) Logical operator
+
+  // 1) Airthmatic operators Example:
+
+  /*
+  Example of Addition:
+  int a = 10;
+  int b = 12;
+  var add;
+
+  add = a + b;
+  print(add);
+  
+  Example of Subtraction:
+  int a = 16;
+  int b = 12;
+  var sub;
+
+  sub = a - b;
+  print(sub);
+
+  Example of Multiplication:
+  int a = 12;
+  int b = 5;
+  var multiply;
+
+  multiply = a * b;
+  print(multiply);
+
+  Example of Division:  
+  int a = 25;
+  int b = 5;
+  var divide;
+
+  divide = a / b;
+  print(divide);
+  
+  Example of Tilda Division:
+  double a = 25.65;
+  double b = 5.456;
+  var divide;
+
+  divide = a ~/ b;
+  print(divide);
+ 
+  Example of Modulus Operator:
+  int a = 12;
+  int b = 5;
+  var modulus;
+
+  modulus = a % b;
+  print(modulus);
+  
+  Example of Increment:
+  int a = 12;
+  var increment;
+
+  increment = ++a;
+  print(increment);
+
+  Example of Decrement:
+  int b = 9;
+  var decrement;
+
+  decrement = --b;
+  print(decrement);
+  
+
+  
+  2) EQUALITY AND RELATIONAL OPERATORS EXAMPLES:
+
+ Example of Greater than operator:
+  int a = 10;
+  int b = 9;
+
+  if (a > b) {
+    print("True");
+  }
+
+Example of Less than operator:
+  int a = 8;
+  int b = 12;
+
+  if (a < b) {
+    print("True");
+  }
+
+Example of Greater than or Equalto operator:
+  int a = 8;
+  int b = 12;
+
+  if (a >= b) {
+    print("True");
+  } else {
+    print("False");
+  }
+
+ Example of Lesserthan or Equalto operator:
+  int a = 8;
+  int b = 12;
+
+  if (a <= b) {
+    print("True");
+  } else {
+    print("False");
+  }
+
+  Example of Equality Operator:
+  
+   int a = 8;
+  int b = 12;
+
+  if (a == b) {
+    print("True");
+  } else {
+    print("False");
+  }
+ 
+   Example of Not Equal to operator:
+
+  int a = 8;
+  int b = 12;
+
+  if (a != b) {
+    print("True");
+  } else {
+    print("False");
+  }
+
+
+  3) Example of LOGICAL OPERATOR:
+
+  
+  Example of AND OPERATOR:
+
+  int a = 10;
+  int b = 10;
+
+  if ((a >= 10) && (b >= 10)) {
+    print("True");
+  } else {
+    print("False");
+  }
+
+  
+  Example of OR OPERATOR:
+
+  int a = 10;
+  int b = 8;
+
+  if ((a >= 10) || (b >= 10)) {
+    print("True");
+  } else {
+    print("False");
+  }
+
+
+ Example of NOT Operator
+
+  int a = 10;
+  int b = 10;
+
+  if ((a >= 10) && !(b >= 10)) {
+    print("True");
+  } else {
+    print("False");
+  }
+
+ 
+  QUESTION NO 2: Cost of one movie ticket is 600 PKR. Write a script to 
+  store ticket price in a variable & calculate the cost of buying 
+   5 tickets to a movie ?
+
+ ANSWER)
+
+  var ticket_price = 600;
+  int cost;
+
+  cost = 5 * 600;
+  print(cost);
+  
+  
+  QUESTION NO 4: What is a difference between these operators “??" And "?”
+
+  ANSWER)
+
+  1) The single ( ? ) mark is simple version of if else statement if expression
+     1 is (True) then it will executed and if expression 2 is (true) then it
+     will executed.
+
+  2) The double (??) shows if If expersion1 is non-null returns its value 
+     else returns expression2 value.
+
+
+
+   QUESTION NO 5: What are the data types supported in Dart? Explain 
+    with Examples. 
+
+    ANSWER) 
+
+     1) NUMBER:
+              The number in Dart Programming is the data type that is used to 
+              hold the numeric value. Dart numbers can be classified as: 
+
+             a) The int data type is used to represent whole numbers.
+             b)The double data type is used to represent 64-bit floating-point numbers.
+             c)The num type is an inherited data type of the int and double types 
+           
+
+     int num1 = 2;
+     double num2 = 1.5;
+     print(num1);
+     print(num2);
+     var a1 = num.parse("1");
+     var b1 = num.parse("2.34");
+     var c1 = a1 + b1;
+     print("Product = ${c1}");
+
+      
+     2. String: 
+               It used to represent a sequence of characters. It is a sequence 
+      of UTF-16 code units. The keyword string is used to represent string literals.
+      String values are embedded in either single or double-quotes. 
+  
+	
+	     String string = 'Arham''Ahmed''Ansari';
+	     String str = 'Coding is ';
+	    String str1 = 'Fun';
+	    print (string);
+	    print (str + str1);
+
+      
+      3. Boolean: 
+               It represents Boolean values true and false. The keyword bool 
+      is used to represent a Boolean literal in DART.
+  
+      String str = 'Flutter is '; 
+      String str1 = 'Best'; 
+    
+      bool val = (str==str1);
+      print (val);  
+
+       
+      4. List: 
+             List data type is similar to arrays in other programming languages
+     A list is used to represent a collection of objects. It is an ordered group 
+     of objects.
+
+      List abc = new List(3); 
+       abc[0] = 'Arham'; 
+       abc[1] = 'Ahmed'; 
+       abc[2] =  56; 
+    
+       print(abc); 
+       print(abc[0]); 
+
+      
+      5. Map: 
+      The Map object is a key and value pair. Keys and values on a map 
+      may be of any type. It is a dynamic collection. 
+
+         Map xyz = new Map(); 
+         xyz['Arham'] = 98; 
+         xyz['Umair'] = 97; 
+         xyz[Ahris] = 96;
+         print(xyz); 
+
+
+  QUESTION NO 6: 
+   Solve:
+     a. First declare an array and assign the numbers of the table of 7.
+     b. Second declare another array and assign the numbers 1-10
+     c. Now write down the table of 7 using map.fromiterables method. 
+ 
+     var Table_of_7 = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70];
+     var Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+     var data = Map.fromIterables(Numbers, Table_of_7);
+     print(data);
+
+  var js = "arhamahmed3456";
+  String user = " ";
+  print("Enter your Password: ");
+  String? pass = stdin.readLineSync();
+
+  if (pass == js) {
+    print("The Password you entered is correct");
+  } else if (pass != user) {
+    print("Please Enter your Password");
+  } else {
+    print("Invalid password");
+  }
+
+  */
+
+  
+}
